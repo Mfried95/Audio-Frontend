@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import React, { Suspense, lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+const Home = lazy(() => import("../src/pages/Home"));
 
 function App() {
-
   return (
-    <>
-      <h2 className='mt-1'>TESTING</h2>
-    </>
-  )
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>  {/* Provide a fallback while the component is loading */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Suspense>
+    </div>
+  );
 }
 
-export default App
+export default App;
