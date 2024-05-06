@@ -8,7 +8,11 @@ module.exports = {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
       },
+      colors: {
+        'nav-hover': '#D87D4A',  // Ensure this is correctly defined
+      },
     },
   },
   plugins: [],
 }
+
