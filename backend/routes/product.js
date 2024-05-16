@@ -31,6 +31,7 @@ router.post('/', async (req, res) => {
   try {
     const product = await Product.create(req.body);
     res.status(201).json(product);
+    console.log(product);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
