@@ -11,7 +11,7 @@ const Navigation = () => {
     <div>
       {/* Mobile and Tablet Navigation */}
       <div className="lg:hidden bg-[#111010] h-[97px] flex items-center px-4 justify-between ">
-        <Hamburger toggled={isOpen} toggle={setIsOpen} color="#ffffff" />
+        <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} color="#ffffff" />
         <img src={Logo} alt="Logo" width="120" />
         <img src={CartIcon} alt="Cart Icon" />
       </div>
